@@ -1,6 +1,6 @@
 # haitaoLeetCode
 
-> - LeetCode 刷题 &amp; 算法笔记详解  &amp;  设计模式详解
+> - LeetCode 算法笔记 &amp; 设计模式详解
 
 
 
