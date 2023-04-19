@@ -1,6 +1,4 @@
-# haitaoLeetCode
-
-> - LeetCode 算法笔记 &amp; 设计模式详解
+[TOC]
 
 
 
