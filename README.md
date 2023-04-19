@@ -1,4 +1,10 @@
-# <p align="center">持续更新中😊〽️🤗，欢迎指出错误🈯❌</p>
+# <p align="center">持续更新中😊〽️🤗，欢迎一起探讨</p>
+
+<div align="center">
+<img src="https://img.shields.io/badge/Java-算法-ff5722.svg?colorB=00CD00" />
+<img src="https://img.shields.io/badge/Java-设计模式-ff5722.svg?colorB=00CD00" />
+<img src="https://img.shields.io/badge/LeetCode-刷题-ff5722.svg?colorB=00CD00" />
+</div>
 
 # Table of Contents
 
