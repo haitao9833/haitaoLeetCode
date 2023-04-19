@@ -43,7 +43,7 @@
 > - 判断浮点数的**<u>小数部分</u>**是否为 `0` 可用 `double % 1.0`（见 `StreamMain.java` 代码）
 > - 注意 `-Integer.MIN_VALUE` **<u>会溢出</u>**，且 `Integer.MIN_VALUE / -1` **<u>也会溢出</u>** 
 > - **<u>溢出结果</u>**还是 ` == Integer.MIN_VALUE`（例如 `Solution_29` 和 `Solution_166` ，涉及乘法 `&` 除法的问题都要注意）
-> - 通常取 `+∞ == 0x3f3f3f3f` 为 $1\times10^9$ 与 `Integer.MAX_VALUE` 同为 10 亿级别，且 `∞ + ∞` 不溢出（[见下述输入输出练习](##在线输入输出练习)）
+> - 通常取 `+∞ == 0x3f3f3f3f` 为 $1\times10^9$ 与 `Integer.MAX_VALUE` 同为 10 亿级别，且 `∞ + ∞` 不溢出（[见下述输入输出练习](#在线输入输出练习)）
 > - `null == null` 返回 `true` 
 > - 初始化二维数组用 `{{...} , {...} , ...}` 而不是 `[[...] , [...] , ...]` 
 > - 赋值语句 `=` 的返回值就是赋值后左边变量的值
@@ -52,7 +52,7 @@
 - 整数相除 `/` 
   - 利用**<u>数轴</u>**上 `x` 的倍数**<u>理解</u>** 
   - 向下取整：`x / y` 向 `0` 取（直接抹去小数部分）
-  - 向上取整：`(x + y - 1)/y == (x - 1)/y + 1 ` 向 `-∞ 、+∞` 取（[见下建堆](##堆)）
+  - 向上取整：`(x + y - 1)/y == (x - 1)/y + 1 ` 向 `-∞ 、+∞` 取（[见下建堆](#堆)）
 - 从左到右计算 `++ 、--` 的陷阱
   - `(x ...) ... (x++)`（前面的 `x` 还未自增 `1`）
   - `(x++) ... (x ...)`（后面的 `x` 已经自增 `1` 了）
@@ -221,7 +221,7 @@
 > - **<u>滑动</u>** `r` $\Rightarrow$ **<u>不满足</u>**条件了 $\Rightarrow$ **<u>收缩</u>** `l` $\Rightarrow$ 直到满足（`Solution_713 、438 、3 、395`）
 > - **<u>滑动</u>** `r` $\Rightarrow$ **<u>恰满足</u>**条件了 $\Rightarrow$ **<u>收缩</u>** `l` $\Rightarrow$ 寻找更优（`Solution_209 、76`）
 > - 也可以理解为求以下标 `r` 为结尾的最优的**<u>连续</u>**子数组 `&` **<u>连续</u>**子串
-> - [见下述字母异位词](##字母异位词)   
+> - [见下述字母异位词](#字母异位词)   
 
 
 
@@ -263,7 +263,7 @@
 
 ### 堆排序
 
-> - [见下述堆](##堆)   
+> - [见下述堆](#堆)   
 > - 向下调整：`root = max(root , root.left , root.right)` 
 
 ### 冒泡排序
@@ -658,7 +658,7 @@
      - <font style="color:red">项分析 $\Rightarrow$ 确保正上方和左上方都已经更新计算过了</font> 
      - 正上方 `&` 左上方
      - 就是将比较总价值大小的 `max(...)` 函数换成了**<u>累加方案数</u>**的 `+` 函数
-- 遍历顺序：[同 01 背包二维算法](###二维算法-1)   
+- 遍历顺序：[同 01 背包二维算法](#二维算法-1)   
 - 初始化:stars: 
   - 需要初始化 `i=0` 的第一行
   - 在 `nums[0] == 0` 的情况下
@@ -675,7 +675,7 @@
 > - 自身旧值 `dp[j]` 和正左方旧值 `dp[j-weight[j]]` $\Rightarrow$ `dp[j] += dp[j-weight[i]]` 
 > - <font style="color:red">需要先初始化 `dp[0] = 1`</font> $\Rightarrow$ 然后同 01 背包一维算法 `i` 正序遍历 `[0 -> N-1]` 且第一遍 `i=0` 的遍历**<u>效果等同于</u>**上述二维算法
 > - <font style="color:red">唯一策略 $\Rightarrow$ 等同于 01 背包问题一维算法 $\Rightarrow$ 外层正序遍历 `i` ，内层 `j` 逆序遍历</font> 
-> - **<u>因为必须先遍历物品 `i` $\Rightarrow$ 所以只能求组合，不能求排列</u>**（[详见下述完全背包方案数的组合排列](###方案数的组合排列)）
+> - **<u>因为必须先遍历物品 `i` $\Rightarrow$ 所以只能求组合，不能求排列</u>**（[详见下述完全背包方案数的组合排列](#方案数的组合排列)）
 
 
 
@@ -715,7 +715,7 @@
   - 可将 `dp[j-weight[i]] + value[i]` 理解为装入当前物品 `i` 且剩余容量 `j-weight[i]` 可装入 `[0 ~ n-1]` 任意物品所能得到的最大价值
   - 此时只有最后完全运算完后的一行才有意义
   - 也为下面的**<u>排列</u>**奠定了基础
-- [恰好装满问题同 01 背包一样](###恰好装满) 
+- [恰好装满问题同 01 背包一样](#恰好装满) 
 
 
 
@@ -800,7 +800,7 @@
 
 ## 字母异位词
 
-> - [见上述滑动区间](##滑动区间)  
+> - [见上述滑动区间](#滑动区间)  
 > - 模式 `pattern[]` 和 `windows[]` 的匹配
 > - `LC_Hash` 的 `Solution_438 、76` 
 
@@ -854,7 +854,7 @@ matrix[i][j] == arr[i * col + j]
 
 > - **<u>要求去重</u>**用 `Set` 
 > - **<u>无需去重</u>**用 `Map` 
-> - **<u>空间优化</u>**：应该始终对**<u>较短的</u>**集合建立 `Set` 或 `Map` （[如下述建堆的空间优化](##堆)）
+> - **<u>空间优化</u>**：应该始终对**<u>较短的</u>**集合建立 `Set` 或 `Map` （[如下述建堆的空间优化](#堆)）
 
 
 
@@ -901,7 +901,7 @@ matrix[i][j] == arr[i * col + j]
 
 > - `slow = head.next`（依次指向节点编号 `2 、3 、4 、...`）
 > - `slow = head.next.next`（依次指向节点编号 `3 、5 、7 、...`）（**<u>奇数</u>**）
-> - `slow` 指向的<font style="color:red">节点编号</font>为 `fast` 的**<u>奇数正中间</u>**（[$\frac{1 + fast\ 编号}{2} = slow\ 编号$（见上述 `mid`）](###mid)）
+> - `slow` 指向的<font style="color:red">节点编号</font>为 `fast` 的**<u>奇数正中间</u>**（[$\frac{1 + fast\ 编号}{2} = slow\ 编号$（见上述 `mid`）](#mid)）
 > - `fast` 走过的<font style="color:red">步长边数</font>为 `slow` 的**<u>两倍</u>** 
 
 - 初始化之前：需要判断 `head != null && head.next != null`  
@@ -1013,7 +1013,7 @@ matrix[i][j] == arr[i * col + j]
 
 ## 递归链接
 
-> - [见上述递归链接](##递归链接-1)   
+> - [见上述递归链接](#递归链接-1)   
 
 
 
@@ -1053,7 +1053,7 @@ matrix[i][j] == arr[i * col + j]
 
 > - [在线笔试常见输入输出练习](https://www.nowcoder.com/exam/test/65746788/detail?pid=27976983#question)   
 > - [在线笔试常见输入输出答案](https://ac.nowcoder.com/acm/contest/5657#question)   
-> - `int` 的范围是 $[-2\times10^9\ ,\ 2\times10^9]$（`20` 亿级别）（[见上述小细节](##小细节)）
+> - `int` 的范围是 $[-2\times10^9\ ,\ 2\times10^9]$（`20` 亿级别）（[见上述小细节](#小细节)）
 > - 最后一题的范围是 $2\times10^{10}$ 百亿级别，需要使用 `long` 
 
 ```java
@@ -1304,7 +1304,9 @@ public class Main{
   - 组合 $\Rightarrow$ **<u>同生共死</u>**的整体与部分 $\Rightarrow$ 构造方法中直接实例化：◆$\longrightarrow$ 
 - 依赖关系：一个类的方法**<u>使用</u>**另一个类的对象**<u>作为参数</u>** $\Rightarrow\left\{\begin{aligned}&方法参数注入\\&方法中创建另一个类的局部变量\\&方法中调用另一个类的静态方法\end{aligned}\right.$   
 
-<img src="D:\__Pro\pic\UML 类图.png" width="200px" height="220px" align = "left"/>
+
+
+<img src="/imgs/UML 类图.png" width="200px" height="220px" align = "left"/>
 
 # 原则
 
@@ -1502,7 +1504,7 @@ public class Main{
 > - 客户端 $\Leftrightarrow$ 服务员（外观类 `Facade`） $\Leftrightarrow$ 多个业务类（子系统）
 > - 外观类 `Facade` 为子系统中的一组接口提供了一个统一方便的入口，使得子系统更加容易使用
 > - 客户端只需要与外观类打交道，而不需要与子系统中的多个业务类打交道，降低了系统的耦合度
-> - 是[迪米特法则](##迪米特法则)的一种具体实现
+> - 是[迪米特法则](#迪米特法则)的一种具体实现
 > - 在外观类 `Facade` 中需要维护对子系统对象的关联引用
 > - 增加或删除子系统需要修改外观类，一定程度上不满足开闭原则 $\Rightarrow$ 引入**<u>抽象外观类</u>** 
 > - 对于新的业务需求，增加一个新的具体外观类，关联引用新的子系统对象，客户端也可以针对抽象外观类进行编程
@@ -1585,7 +1587,7 @@ public class Main{
 
 > - 网状系统（多对多关系） $\Rightarrow$ 星形系统（一对多关系）
 > - 将对象之间的交互封装为一个对象，可以使对象之间的关系数量急剧减少
-> - 是[迪米特法则](##迪米特法则)的一种具体实现
+> - 是[迪米特法则](#迪米特法则)的一种具体实现
 > - 抽象中介者 `Mediator` $\Rightarrow$ 具体中介者 `ConcreteMediator`（维持了需要交互通信的**<u>具体</u>**同事类对象的关联引用）
 > - 抽象同事类 `Colleague`（维持了一个**<u>抽象</u>**中介者的关联引用）$\Rightarrow$ 具体同事类 `ConcreteColleague` 
 > - 抽象同事类 `Colleague` 中一般声明有一个**<u>依赖方法</u>** `Depend-Method` ，用于调用中介者的方法，即与中介者通信
@@ -1675,7 +1677,7 @@ public class Main{
 > - 增加新的访问者：无需修改任何源代码，只需在新的访问者中实现对每一个具体元素的访问操作即可
 > - 增加新的元素：麻烦大了，需要在抽象访问者和具体访问者中增添相应的访问方法
 
-- 缺点：[类似于上述抽象工厂模式的开闭原则的倾斜性](##抽象工厂模式)，且破坏了封装性，元素需暴露自己的内部状态给访问者，以便其进行访问操作
+- 缺点：[类似于上述抽象工厂模式的开闭原则的倾斜性](#抽象工厂模式)，且破坏了封装性，元素需暴露自己的内部状态给访问者，以便其进行访问操作
 
 
 
@@ -1683,7 +1685,7 @@ public class Main{
 
 > - 接口中的方法太多，实现接口就会很复杂 $\Rightarrow$ 使用抽象类，提供一些默认实现
 > - 静态方法只能被继承，不能被重写，且静态方法是**<u>静态绑定</u>**的
-> - [定义自身类型的成员变量，是否会无限套娃一](https://blog.csdn.net/m0_62190011/article/details/126190955?spm=1001.2101.3001.6650.4&utm_medium=distribute.pc_relevant.none-task-blog-2~default~CTRLIST~Rate-4-126190955-blog-51579426.pc_relevant_recovery_v2&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2~default~CTRLIST~Rate-4-126190955-blog-51579426.pc_relevant_recovery_v2&utm_relevant_index=5)（[见上述单例模式](##单例模式)）
+> - [定义自身类型的成员变量，是否会无限套娃一](https://blog.csdn.net/m0_62190011/article/details/126190955?spm=1001.2101.3001.6650.4&utm_medium=distribute.pc_relevant.none-task-blog-2~default~CTRLIST~Rate-4-126190955-blog-51579426.pc_relevant_recovery_v2&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2~default~CTRLIST~Rate-4-126190955-blog-51579426.pc_relevant_recovery_v2&utm_relevant_index=5)（[见上述单例模式](#单例模式)）
 > - [定义自身类型的成员变量，是否会无限套娃二](https://www.bbsmax.com/A/ZOJPEYbe5v/)   
 
 
