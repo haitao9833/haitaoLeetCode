@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<config>
+    <SimpleFactory>
+        <chartType>HISTOGRAM</chartType>
+        <chartType>PIE</chartType>
+        <chartType>pIE</chartType>
+    </SimpleFactory>
+
+    <Factory>
+        <factoryClassName>GoF.Creational.Factory.DatabaseLoggerFactory</factoryClassName>
+        <factoryClassName>GoF.Creational.Factory.DatabaseLoggerFactory</factoryClassName>
+        <factoryClassName>GoF.Creational.Factory.FileLoggerFactory</factoryClassName>
+    </Factory>
+
+    <AbstractFactory>
+        <abstractFactoryClassName>GoF.Creational.AbstractFactory.SpringSkinFactory</abstractFactoryClassName>
+        <abstractFactoryClassName>GoF.Creational.AbstractFactory.SpringSkinFactory</abstractFactoryClassName>
+        <abstractFactoryClassName>GoF.Creational.AbstractFactory.SummerSkinFactory</abstractFactoryClassName>
+    </AbstractFactory>
+
+    <Builder>
+        <builderClassName>GoF.Creational.Builder.DevilBuilder</builderClassName>
+        <builderClassName>GoF.Creational.Builder.AngelBuilder</builderClassName>
+        <builderClassName>GoF.Creational.Builder.AngelBuilder</builderClassName>
+        <builderClassName>GoF.Creational.Builder.HeroBuilder</builderClassName>
+    </Builder>
+
+</config>
