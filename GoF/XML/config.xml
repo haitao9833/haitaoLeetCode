@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<config>
+    <bookstore>
+        <book id="33" lovable="true">
+            <name>War's Art</name>
+            <author>SunZi</author>
+            <year>2022
+                <month>01</month>
+                <day>28</day>
+            </year>
+        </book>
+        <book id="18" justice="right" years="5000">
+            <name>Analects</name>
+            <author>Confucius</author>
+        </book>
+    </bookstore>
+</config>
