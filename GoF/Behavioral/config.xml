@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<config>
+    <Command>
+        <CommandClass>GoF.Behavioral.Command.HelpCommand</CommandClass>
+        <CommandClass>GoF.Behavioral.Command.ExitCommand</CommandClass>
+    </Command>
+
+    <Strategy>
+        <StrategyClass>GoF.Behavioral.Strategy.DiscountSys.VIPDiscount</StrategyClass>
+        <StrategyClass>GoF.Behavioral.Strategy.DiscountSys.ChildrenDiscount</StrategyClass>
+        <StrategyClass>GoF.Behavioral.Strategy.DiscountSys.StudentDiscount</StrategyClass>
+    </Strategy>
+
+    <Template>
+        <TemplateMethod>GoF.Behavioral.TemplateMethod.AccountSys.SavingAccount</TemplateMethod>
+        <TemplateMethod>GoF.Behavioral.TemplateMethod.AccountSys.CurrentAccount</TemplateMethod>
+    </Template>
+
+    <Visitor>
+        <VisitorClass>GoF.Behavioral.Visitor.DepartmentSys.HRDepartment</VisitorClass>
+        <VisitorClass>GoF.Behavioral.Visitor.DepartmentSys.FADepartment</VisitorClass>
+    </Visitor>
+</config>
