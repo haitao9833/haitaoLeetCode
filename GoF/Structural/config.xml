@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<config>
+    <Adapter>GoF.Structural.Adapter.PoliceCarAdapter</Adapter>
+
+    <Bridge>
+        <ConcreteImplementor>GoF.Structural.Bridge.LinuxImp</ConcreteImplementor>
+        <RefinedAbstraction>GoF.Structural.Bridge.GIFImage</RefinedAbstraction>
+        <RefinedAbstraction>GoF.Structural.Bridge.JPGImage</RefinedAbstraction>
+        <ConcreteImplementor>GoF.Structural.Bridge.WindowsImp</ConcreteImplementor>
+    </Bridge>
+
+    <Facade>
+        <FacadeClassName>GoF.Structural.Facade.NewEncryptFacade</FacadeClassName>
+        <FacadeClassName>GoF.Structural.Facade.EncryptFacade</FacadeClassName>
+    </Facade>
+
+    <Proxy>
+        <ProxyClassName>GoF.Structural.Proxy.ProxySearcher</ProxyClassName>
+    </Proxy>
+
+</config>
