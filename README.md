@@ -1,4 +1,4 @@
-# <p align="center">持续更新中😊〽️🤗，欢迎一起探讨</p>
+# <p align="center">持续更新中〽️🤗，欢迎一起探讨😊</p>
 
 <div align="center">
 <img src="https://img.shields.io/badge/Java-算法-ff5722.svg?colorB=00CD00" />
@@ -7,10 +7,10 @@
 </div>
 
 # <img src="https://img.shields.io/badge/!!!-笔记修复-ff5722.svg?colorB=ea1017" />
-- 笔记由 Typora 编写，但 Typora 有些语法在 GitHub 上不支持
+- 笔记由 Typora 编写，但 Typora 有些语法在 GitHub 上不支持:sweat_smile:
   - [ ] 例如**下划线**
   - [ ] 例如**公式 `$$` 中的一些括号样式**
-- 正在**逐步修复**，以适应 GFM 语法
+- 正在**逐步修复🤔**，以适应 GFM 语法
 
 # Table of Contents
 
