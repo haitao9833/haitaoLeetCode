@@ -141,17 +141,16 @@
 
 # 算法
 
-> - `LC_Office_1 == 《剑指 Offer （第 2 版）》` 
-> - `LC_Office_2 == 《剑指 Offer （专项突击版）》` 
-> - `LC_Office_3 == 《程序员面试金典 （第 6 版）》` 
-> - `LC_Offer` **<u>需特别注明</u>** 
+> - 文件夹 `LC_Office_1 == 《剑指 Offer （第 2 版）》` 
+> - 文件夹 `LC_Office_2 == 《剑指 Offer （专项突击版）》` 
+> - 文件夹 `LC_Office_3 == 《程序员面试金典 （第 6 版）》` 
 
 
 
 ## 质数
 
 > - `1` 既不是质数也不是合数
-> - **<u>质因数分解定理</u>**：任何一个 `> 1` 的合数都可以**<u>唯一地分解为有限个质数的乘积</u>** 
+> - **<ins>质因数分解定理</ins>**：任何一个 `> 1` 的合数都可以**<ins>唯一地分解为有限个质数的乘积</ins>** 
 
 - 简单判断质数
   - 合数 `n` $\Rightarrow$ 必有 $\leqslant \sqrt{n}$ 的质因子（若 `n = p * q` $\Rightarrow$ 必有 $p \leqslant \sqrt{n}$ 或者 $q \leqslant \sqrt{n}$ ）
