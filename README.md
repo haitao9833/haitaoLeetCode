@@ -1449,8 +1449,6 @@ public class Main{
 		<img src="/imgs/UML 类图.png" width="250px" height="280px" />
 </div>
 
-> - `<img src="/imgs/UML 类图.png" width="300px" height="320px" align = "left"/>`
-
 
 
 # 原则
