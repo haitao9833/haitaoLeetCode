@@ -1444,9 +1444,9 @@ public class Main{
 # UML 类图箭头
 
 <div align="center" style="display:flex">
-		<img src="/imgs/UML 类图.png" width="300px" height="320px" />
-		<img src="/imgs/UML 类图.png" width="300px" height="320px" />
-		<img src="/imgs/UML 类图.png" width="300px" height="320px" />
+		<img src="/imgs/UML 类图.png" width="280px" height="300px" />
+		<img src="/imgs/UML 类图.png" width="280px" height="300px" />
+		<img src="/imgs/UML 类图.png" width="280px" height="300px" />
 </div>
 
 > - `<img src="/imgs/UML 类图.png" width="300px" height="320px" align = "left"/>`
