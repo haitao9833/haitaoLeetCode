@@ -95,6 +95,7 @@
 * [在线输入输出练习](#在线输入输出练习)
 * [设计模式](#设计模式)
 * [UML 类图](#uml-类图)
+* [UML 类图箭头](#uml-类图箭头)
 * [原则](#原则)
   * [单一职责原则](#单一职责原则)
   * [开闭原则（目标）](#开闭原则)
@@ -1440,7 +1441,17 @@ public class Main{
 
 
 
-<img src="/imgs/UML 类图.png" width="200px" height="220px" align = "left"/>
+# UML 类图箭头
+
+<div align="center" style="display:flex">
+		<img src="/imgs/UML 类图.png" width="300px" height="320px" />
+		<img src="/imgs/UML 类图.png" width="300px" height="320px" />
+		<img src="/imgs/UML 类图.png" width="300px" height="320px" />
+</div>
+
+> - `<img src="/imgs/UML 类图.png" width="300px" height="320px" align = "left"/>`
+
+
 
 # 原则
 
